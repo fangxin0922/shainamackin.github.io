@@ -1,8 +1,40 @@
 ---
 title: "About"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: sandstone
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+
+
+
+
+
+
+# Educational Background
+
+#### Mailman School of Public Health
+
+#### Seattle Pacific University 
+
+# Professional Experience
+
+#### Bill & Melinda Gates Foundation
+
+#### Fulbright Grantee, Malaysia
+
+#### The Borgen Project
+
+# Volunteer Experience
+
+#### The Language Institute
+
+#### Refugee Women's Alliance 
+
+#### The Bush School
