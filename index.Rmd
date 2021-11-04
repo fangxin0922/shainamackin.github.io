@@ -1,0 +1,14 @@
+---
+title: "Shaina Mackin"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# This is Shaina Mackin's website
+
+Find me on [linkedin](https://www.linkedin.com/in/shainamackin/).
+
+Here's my [about](about.html) page. 
