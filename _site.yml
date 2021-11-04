@@ -1,4 +1,4 @@
-name: "Yay internet!"
+name: "Shaina Mackin"
 output_dir: "."
 navbar:
   title: "Home"
@@ -15,4 +15,4 @@ navbar:
       href: http://github.com/shainamackin/
 output:
   html_document:
-    theme: cerulean
+    theme: sandstone
