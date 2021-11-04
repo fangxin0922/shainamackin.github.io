@@ -2,13 +2,16 @@
 title: "Shaina Mackin"
 output: 
   html_document:
-    toc: true
-    toc_float: true
+    toc: false
+    toc_float: false
     theme: sandstone
 ---
 
-# This is Shaina Mackin's website
+<img src="images/shainamackinheadshot.jpeg" style="width:39%"> 
 
-Find me on [linkedin](https://www.linkedin.com/in/shainamackin/).
 
-Here's my [about](about.html) page. 
+
+
+Let's connect on [LinkedIn](https://www.linkedin.com/in/shainamackin/)!
+
+In the meantime, here's a bit more [about](about.html) me. 
