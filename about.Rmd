@@ -1,31 +1,31 @@
 ---
-title: "About"
+title: "About Me"
 output: 
   html_document:
     toc: true
     toc_float: true
     theme: sandstone
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-
-
-
-
-
-
-# Educational Background
-
-#### Mailman School of Public Health
-
-#### Seattle Pacific University 
-
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+# **Educational Background**
+<p>&nbsp;</p>
+## Columbia Univeristy Mailman School of Public Health 
+### Master of Public Health in Sociomedical Sciences, May 2022
+#### Certificate in Comparative Effectiveness Outcomes Research
+* Scholar, Huo Family Foundation
+* Research Assistant, Averting Maternal Death & Disability Program
+* Staff Writer, Columbia Health Dispatch
+* Mentor, R.I.S.E. (Resilience, Inclusion, Solidarity & Empowerment)
+* Public Health Fellow, Initiative to End Girls’ Incarceration, The Vera Institute of Justice
+<p>&nbsp;</p>
+## Seattle Pacific University
+### Bachelor of Arts in Political Science, International Affairs, June 2015
+* Honors: Summa Cum Laude, Dean’s List, International Affairs Student of the Year
+<p>&nbsp;</p>
 # Professional Experience
 
-#### Bill & Melinda Gates Foundation
+#### **Bill & Melinda Gates Foundation**
 
 #### Fulbright Grantee, Malaysia
 
