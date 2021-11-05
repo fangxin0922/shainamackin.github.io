@@ -37,7 +37,7 @@ output:
 #### Program Assistant | TB & HIV, 2018 - 2019
 #### Program Assistant | Global Health Office of the President, 2016
 <p>&nbsp;</p>
-## [U.S. State Department, Fulbright Program](https://www.macee.org.my/)
+## [Fulbright Program, U.S. Department of State](https://www.macee.org.my/)
 #### Grantee | Malaysia, 2017
 [Guest Article published on Fulbright Malaysia ETA Blog](https://fulbrightmalaysiaeta.blogspot.com/2017/10/satu-malaysia-rocking-boats-and-eating.html)
 <p>&nbsp;</p>
@@ -48,7 +48,7 @@ output:
 # **Community Engagement**
 <p>&nbsp;</p>
 ## [The Bush School](https://bushblazersathletics.com/)
-##### Assistant Middle School Girls Basketball Coach, 2019 - 2020
+#### Assistant Middle School Girls Basketball Coach, 2019 - 2020
 <p>&nbsp;</p>
 ## [Refugee Women's Alliance](https://www.rewa.org/)
 #### Postsecondary Success Program Volunteer, 2018 - 2020
@@ -58,5 +58,3 @@ output:
 <p>&nbsp;</p>
 ## [The Language Institute](https://www.upc.org/connect/internationals/english-as-a-second-language/)
 #### Intermediate ESL Teacher, 2015 - 2016
-
-<p>&nbsp;</p>
