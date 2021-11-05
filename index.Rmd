@@ -21,7 +21,7 @@ scale_fill_discrete = scale_fill_viridis_d
 ```
 
 <p align="center">
-  <img src="images/shainamackinheadshot.jpeg">
+  <img width = 50% src="images/shainamackinheadshot.jpeg">
 </p>
 
 <p align="center">
