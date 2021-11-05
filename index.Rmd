@@ -24,6 +24,6 @@ scale_fill_discrete = scale_fill_viridis_d
   <img src="images/shainamackinheadshot.jpeg">
 </p>
 
-Let's connect on [LinkedIn](https://www.linkedin.com/in/shainamackin/)!
-
-In the meantime, here's a bit more [about](about.html) me. 
+<p align="center">
+Welcome! I'm Shaina, a PNW transplant pursuing my Master of Public Health at Columbia's Mailman School. I'll be graduating May of 2022, but in the meantime, you can find a bit more [about](about.html) me here. 
+</p>
