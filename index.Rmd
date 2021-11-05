@@ -20,7 +20,9 @@ scale_fill_discrete = scale_fill_viridis_d
 
 ```
 
-<img src="images/shainamackinheadshot.jpeg" style="width:39%"> 
+<p align="center">
+  <img src="images/shainamackinheadshot.jpeg">
+</p>
 
 Let's connect on [LinkedIn](https://www.linkedin.com/in/shainamackin/)!
 
