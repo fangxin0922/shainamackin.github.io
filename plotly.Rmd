@@ -7,7 +7,7 @@ output:
     theme: sandstone
 ---
 
-This page is about making some plotly examples. 
+This page explores NYC restaurant inspection data via plotly. 
 
 ``` {r}
 library(tidyverse)
