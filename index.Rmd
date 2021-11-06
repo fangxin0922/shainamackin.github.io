@@ -19,6 +19,7 @@ scale_colour_discrete = scale_colour_viridis_d
 scale_fill_discrete = scale_fill_viridis_d
 
 ```
+<p>&nbsp;</p>
 <p align="center">
 Welcome! I'm Shaina, a PNW transplant pursuing my Master of Public Health at Columbia's Mailman School in NYC. I am interested in the intersection of clinical and social determinants of health in adolescent populations and the power of data to advance health equity through gender-responsive policies and programs. I'll be graduating May of 2022, but in the meantime, you can find a bit more about my academic background and professional experience [here](about.html). 
 </p>

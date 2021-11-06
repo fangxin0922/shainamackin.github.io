@@ -12,6 +12,56 @@ This page is about making some plotly examples.
 ``` {r}
 library(tidyverse)
 library(p8105.datasets)
-
 library(plotly)
 ```
+
+Cleaning restaurant inspection dataset and filtering for only restaurants in Manhattan. 
+```{r}
+data("rest_inspec")
+
+manhattan_rest = rest_inspec %>%
+  janitor::clean_names() %>%
+    filter(boro == "MANHATTAN") %>%
+  select(cuisine_description, dba, critical_flag, inspection_date, inspection_type, score, violation_code, building, street, zipcode, grade) %>%
+  drop_na(score) %>%
+  drop_na(grade) 
+
+all_rest = rest_inspec %>%
+  janitor::clean_names() %>%
+  filter(boro != "Missing") %>%
+  select(boro, cuisine_description, dba, critical_flag, inspection_date, inspection_type, score, violation_code, building, street, zipcode, grade) %>%
+  drop_na(score) %>%
+  drop_na(grade) 
+```
+
+First, let's make a scatter plot of types of cuisine and their associated scores and grades. 
+```{r}
+manhattan_rest %>%
+   mutate(
+    text_label = str_c("Grade: ", grade)
+  ) %>% 
+  plot_ly(
+    x = ~cuisine_description, y = ~score, type = "scatter", mode = "markers", color = ~grade, text = ~text_label, alpha = 0.5)
+```
+
+Second, let's make a bar chart of number of restaurants per borough. 
+```{r}
+all_rest %>%
+  count(boro) %>%
+  mutate(boro = fct_reorder(boro, n)) %>% 
+  drop_na(boro) %>%
+  plot_ly(
+    x = ~boro, y = ~n, color = ~boro, type = "bar", colors = "viridis")
+```
+
+
+Third, let's make a box plot to explore average and range of scores among the boroughs. 
+```{r}
+all_rest %>%
+  mutate(
+    boro = fct_reorder(boro, score)
+    ) %>%
+  plot_ly(
+    y = ~score, color = ~boro, type = "box", colors = "viridis")
+```
+
