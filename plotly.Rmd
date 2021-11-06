@@ -35,7 +35,7 @@ all_rest = rest_inspec %>%
   drop_na(grade) 
 ```
 
-First, let's make a scatter plot of types of cuisine and their associated scores and grades. 
+First, let's make a scatter plot of types of cuisine and their associated scores and grades in Manhattan. 
 ```{r}
 manhattan_rest %>%
    mutate(

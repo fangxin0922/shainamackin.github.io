@@ -35,7 +35,7 @@ all_rest = rest_inspec %>%
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Manhattan Restaurant Inspections by Type of Cuisine and Associated Scores and Grades. 
 
 ```{r}
 manhattan_rest %>%
@@ -49,7 +49,7 @@ manhattan_rest %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Number of Restaurant Inspections per Borough
 
 ```{r}
 all_rest %>%
@@ -60,7 +60,7 @@ all_rest %>%
     x = ~boro, y = ~n, color = ~boro, type = "bar", colors = "viridis")
 ```
 
-### Chart C
+### Average and Range of Inspection Scores among the Boroughs. 
 
 ```{r}
 all_rest %>%
