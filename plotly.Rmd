@@ -5,6 +5,7 @@ output:
     toc: true
     toc_float: true
     theme: sandstone
+    source_code: embed 
 ---
 
 This page explores NYC restaurant inspection data via plotly. 
