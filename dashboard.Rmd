@@ -39,11 +39,14 @@ Column {data-width=650}
 
 ```{r}
 manhattan_rest %>%
+  mutate(cuisine_description = ifelse(as.character(cuisine_description) == "Latin (Cuban, Dominican, Puerto Rican, South & Central American)", "Latin", as.character(cuisine_description))) %>%
+  filter(grade == "A" | grade == "B" | grade == "C") %>%
    mutate(
     text_label = str_c("Grade: ", grade)
   ) %>% 
   plot_ly(
-    x = ~cuisine_description, y = ~score, type = "scatter", mode = "markers", color = ~grade, text = ~text_label, alpha = 0.5)
+    x = ~cuisine_description, y = ~score, type = "scatter", mode = "markers", color = ~grade, text = ~text_label, alpha = 0.5) %>%
+   layout(title = 'Manhattan Restaurant Inspections by Type of Cuisine and Associated Scores and Grades',  xaxis = list(title = 'Cuisine Type'), yaxis = list(title = 'Score'))
 ```
 
 Column {data-width=350}
@@ -57,7 +60,8 @@ all_rest %>%
   mutate(boro = fct_reorder(boro, n)) %>% 
   drop_na(boro) %>%
   plot_ly(
-    x = ~boro, y = ~n, color = ~boro, type = "bar", colors = "viridis")
+    x = ~boro, y = ~n, color = ~boro, type = "bar", colors = "viridis") %>%
+     layout(title = 'Number of Restaurant Inspections per Borough',  xaxis = list(title = 'Borough'), yaxis = list(title = 'Number of Inspections'))
 ```
 
 ### Average and Range of Inspection Scores among the Boroughs. 
@@ -68,6 +72,7 @@ all_rest %>%
     boro = fct_reorder(boro, score)
     ) %>%
   plot_ly(
-    y = ~score, color = ~boro, type = "box", colors = "viridis")
+    y = ~score, color = ~boro, type = "box", colors = "viridis", alpha = .1) %>%
+     layout(title = 'Average and Range of Inspection Scores among the Boroughs',  xaxis = list(title = 'Borough'), yaxis = list(title = 'Score'))
 ```
 

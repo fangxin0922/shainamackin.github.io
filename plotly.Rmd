@@ -8,7 +8,7 @@ output:
     source_code: embed 
 ---
 
-This page explores NYC restaurant inspection data via plotly. 
+This page explores NYC restaurant inspection data using plotly. 
 
 ``` {r}
 library(tidyverse)
@@ -16,7 +16,7 @@ library(p8105.datasets)
 library(plotly)
 ```
 
-Cleaning restaurant inspection dataset and filtering for only restaurants in Manhattan. 
+We'll start by cleaning the restaurant inspection data set.
 ```{r}
 data("rest_inspec")
 
@@ -38,11 +38,14 @@ all_rest = rest_inspec %>%
 First, let's make a scatter plot of types of cuisine and their associated scores and grades in Manhattan. 
 ```{r}
 manhattan_rest %>%
+  mutate(cuisine_description = ifelse(as.character(cuisine_description) == "Latin (Cuban, Dominican, Puerto Rican, South & Central American)", "Latin", as.character(cuisine_description))) %>%
+  filter(grade == "A" | grade == "B" | grade == "C") %>%
    mutate(
     text_label = str_c("Grade: ", grade)
   ) %>% 
   plot_ly(
-    x = ~cuisine_description, y = ~score, type = "scatter", mode = "markers", color = ~grade, text = ~text_label, alpha = 0.5)
+    x = ~cuisine_description, y = ~score, type = "scatter", mode = "markers", color = ~grade, text = ~text_label, alpha = 0.5) %>%
+   layout(title = 'Manhattan Restaurant Inspections by Type of Cuisine and Associated Scores and Grades',  xaxis = list(title = 'Cuisine Type'), yaxis = list(title = 'Score'))
 ```
 
 Second, let's make a bar chart of number of restaurants per borough. 
@@ -52,9 +55,9 @@ all_rest %>%
   mutate(boro = fct_reorder(boro, n)) %>% 
   drop_na(boro) %>%
   plot_ly(
-    x = ~boro, y = ~n, color = ~boro, type = "bar", colors = "viridis")
+    x = ~boro, y = ~n, color = ~boro, type = "bar", colors = "viridis") %>%
+     layout(title = 'Number of Restaurant Inspections per Borough',  xaxis = list(title = 'Borough'), yaxis = list(title = 'Number of Inspections'))
 ```
-
 
 Third, let's make a box plot to explore average and range of scores among the boroughs. 
 ```{r}
@@ -63,6 +66,7 @@ all_rest %>%
     boro = fct_reorder(boro, score)
     ) %>%
   plot_ly(
-    y = ~score, color = ~boro, type = "box", colors = "viridis")
+    y = ~score, color = ~boro, type = "box", colors = "viridis", alpha = .1) %>%
+     layout(title = 'Average and Range of Inspection Scores among the Boroughs',  xaxis = list(title = 'Borough'), yaxis = list(title = 'Score'))
 ```
 
